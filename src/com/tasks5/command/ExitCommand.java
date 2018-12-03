@@ -1,7 +1,11 @@
 package com.tasks5.command;
 
 /**
- *
+ * The Command for displays string "Goodbye!" in CLI.
+ * 
+ * 
+ * ConcreteCommand
+ * 
  * @author serothim
  */
 public class ExitCommand implements Command{

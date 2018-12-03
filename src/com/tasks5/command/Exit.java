@@ -1,6 +1,7 @@
 package com.tasks5.command;
 
 /**
+ * The Receiver class
  *
  * @author serothim
  */

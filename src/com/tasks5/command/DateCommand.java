@@ -1,6 +1,11 @@
 package com.tasks5.command;
 
 /**
+ * The Command for displays in CLI the current date in milliseconds starting on
+ * January 1, 1970 
+ * 
+ * 
+ * ConcreteCommand
  *
  * @author serothim
  */

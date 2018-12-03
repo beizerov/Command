@@ -1,7 +1,8 @@
 package com.tasks5.command;
 
 /**
- *
+ * The Receiver class
+ * 
  * @author serothim
  */
 public class Date {

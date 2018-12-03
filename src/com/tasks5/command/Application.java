@@ -1,7 +1,8 @@
 package com.tasks5.command;
 
 /**
- *
+ * The Client class
+ * 
  * @author serothim
  */
 public class Application {
