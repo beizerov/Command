@@ -13,13 +13,10 @@ public class Application {
     public static void main(String[] args) {
         if (args == null) {
             System.out.println("Error");
-            return;
         } else if (args.length == 0) {
             System.out.println("Error");
-            return;
         } else if (args[0] == null) {
             System.out.println("Error");
-            return;
         } else {
             CommandInvoker invoker = new CommandInvoker();
 
