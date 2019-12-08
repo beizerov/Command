@@ -11,28 +11,24 @@ public class Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        if (args == null) {
-            System.out.println("Error");
-        } else if (args.length == 0) {
-            System.out.println("Error");
-        } else if (args[0] == null) {
-            System.out.println("Error");
-        } else {
+        if (args != null && args.length != 0 && args[0] != null) {
             CommandInvoker invoker = new CommandInvoker();
 
             switch (args.length) {
                 case 1:
                     switch (args[0]) {
                         case "help":
-                            invoker.executeCommand(new HelpCommand(new Help()));
+                            invoker.executeCommand(
+                            		new HelpCommand(new Help())
+                            );
                             break;
                         case "exit":
-                            invoker.executeCommand(new ExitCommand(new Exit()));
+                            invoker.executeCommand(
+                            		new ExitCommand(new Exit())
+                            );
                             break;
                         default:
                             System.out.println("Error");
-                            break;
-
                     }
                     break;
                 case 2:
@@ -42,25 +38,29 @@ public class Application {
                                 System.out.println("Error");
                                 return;
                             } else {
-                                invoker.executeCommand(new EchoCommand(new Echo(args[1])));
+                                invoker.executeCommand(
+                                		new EchoCommand(new Echo(args[1]))
+                                );
                                 break;
                             }
                         case "date":
                             if ("now".equals(args[1])) {
-                                invoker.executeCommand(new DateCommand(new Date()));
+                                invoker.executeCommand(
+                                		new DateCommand(new Date())
+                                );
                             } else {
                                 System.out.println("Error");
                             }
                             break;
                         default:
                             System.out.println("Error");
-                            break;
                     }
                     break;
                 default:
                     System.out.println("Error");
-                    break;
             }
+        } else {
+        	System.out.println("Error");
         }
     }
 }
