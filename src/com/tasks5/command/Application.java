@@ -29,6 +29,7 @@ public class Application {
                             break;
                         default:
                             System.out.println("Error");
+                            break;
                     }
                     break;
                 case 2:
@@ -54,10 +55,12 @@ public class Application {
                             break;
                         default:
                             System.out.println("Error");
+                            break;
                     }
                     break;
                 default:
                     System.out.println("Error");
+                    break;
             }
         } else {
         	System.out.println("Error");
